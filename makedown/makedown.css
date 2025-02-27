@@ -1,0 +1,10 @@
+*{
+    color: mediumpurple;
+    background-color: antiquewhite;
+}
+div{
+    border:  2px solid blueviolet;
+    border: 1%;
+    margin: auto;
+    padding: auto;
+}

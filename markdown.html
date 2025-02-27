@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Tag</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <label for="#" id="id_Output"></label>
+
+    <script>
+        var mdTag = `
+        # Laboratory: CSI204
+
+        ### Example test to use MDtag
+
+        [Workshop section 3](https://dlearning.spu.ac.th/mod/assign/view.php?id=2102887)
+
+        _Teacher said I should write MD Tag in file .html_
+
+        but I <mark>don't know</mark> how to do that  
+        and ~~ChatGPT~~ hmm I mean Google don't give enough command for homework  
+
+        ![Link Click Bridon Arc](https://pbs.twimg.com/media/Gi1M6RnWMAAnUoG?format=jpg&name=large)
+
+        | SS1                | SS2       | SS3     |
+        | ------------------ | --------- | ------- |
+        | Drive Back In Time | Vortex    | The Eye |
+        | Overthink          | The TIDES | Lull    |
+
+        Check List
+        - [x] Workshop 1
+        - [x] Workshop 2
+        - [x] Workshop 3
+
+        > This is a blockquote do not change it
+        `;
+
+        document.getElementById('id_Output').innerHTML = marked.parse(mdTag);
+    </script>
+</body>
+</html>
